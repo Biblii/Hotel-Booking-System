@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busbuddy</title>
+    <link rel="stylesheet" href="bookingForm.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form id="reg-form">
+            <h1>Reserve Now</h1>
+            <div class="input-info">
+                <input type="text" name="user_name" placeholder="Name" required>
+            </div>
+            <div class="input-info">
+                <input type="tel" name="contact_no" placeholder="Contact No." required>
+            </div>
+            <div class="input-info">
+                <input type="date" name="dob" placeholder="Check-in Date" required>
+            </div>
+            <div class="input-info">
+                <input type="date" name="dob" placeholder="Check-out Date" required>
+            </div>
+            <div class="input-info">
+                <select id="options" name="room_type" required>
+                    <option value="" disabled selected>Room Type(price per night)</option>
+                    <option value="single">Single(1000/-)</option>
+                    <option value="deluxe">Deluxe(2000/-)</option>
+                    <option value="suite">Suit(5000/-)</option>
+                </select>
+            </div>
+
+            <!-- Payment Option -->
+            <div class="payment-option">
+                <label for="paymentOption">Payment Option:</label><br>
+                <input type="radio" id="payNow" name="paymentOption" value="payNow">
+                <label for="payNow">Pay Now</label><br>
+                <input type="radio" id="payLater" name="paymentOption" value="payLater">
+                <label for="payLater">Pay Later</label>
+            </div>
+
+            <!-- Payment Amount (Visible when Pay Now is selected) -->
+            <div id="paymentAmountDiv" style="display: none;">
+                <label for="paymentAmount">Enter Payment Amount:</label>
+                <input type="tel" id="paymentAmount" name="paymentAmount" placeholder="Amount">
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="btn">Reserve</button>
+                <a href="index.html" class="go-back-link">Go Back</a>
+            </div>
+        </form>
+
+        <!-- Booking History Section -->
+        <div id="bookingHistory"></div>
+    </div>
+
+    <script src="bookingForm.js"></script>
+</body>
+</html>
