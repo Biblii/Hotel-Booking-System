@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const firstBlock = document.querySelector(".firstBlock");
+    const toggleBtn = document.querySelector(".toggle-btn");
+
+    let isExpanded = false; // Track the toggle state
+
+    toggleBtn.addEventListener("click", () => {
+        if (isExpanded) {
+            firstBlock.style.bottom = "-500px"; // Hide partially
+            toggleBtn.innerHTML = "▲"; // Update arrow direction
+        } else {
+            firstBlock.style.bottom = "0"; // Show fully
+            toggleBtn.innerHTML = "▼"; // Update arrow direction
+        }
+        isExpanded = !isExpanded; // Toggle the state
+    });
+});
+
 // Get elements
 const adminLoginBtn = document.getElementById('adminLoginBtn');
 const loginModal = document.getElementById('loginModal');

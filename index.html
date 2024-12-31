@@ -10,17 +10,19 @@
     <!-- Navigation Bar -->
     <div class="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
+            <li><a href="bookingForm.html">Book Now</a></li>
             <li class="right"><a href="#" id="adminLoginBtn">Admin Login</a></li>
         </ul>
     </div>
     
     <!-- Hero Text -->
     <div class="hero-text">
-        <p>Your Home Away from Home</p>
+        <p>Your Place For A Comfortable Stay</p>
+
     </div>
+    
 
     <!-- Login Popup (Modal) -->
     <div id="loginModal" class="modal">
@@ -41,9 +43,61 @@
     </div>
 
     <!-- Main Content -->
+     <div>
+    <h2 class="section-heading"> Our Rooms</h2>
+</div>
     <div class="firstBlock">
-        <p id="text1">Welcome to Hotel Booking System</p> 
+       
+        <div class="rooms-container">
+            <div class="room">
+                <img src="deluxeRoom.jpg" alt="Room 1" class="room-img">
+                <h3>Deluxe Room</h3>
+                <div class="room-description">
+                    <p>A spacious room equipped with a double bed or two twin beds, perfect for couples or friends traveling together, offering comfort and convenience.</p>
+                    <ul>
+                        <li><strong>Free Wi-Fi</strong></li>
+                        <li><strong>Air Conditioning</strong></li>
+                        <li><strong>Flat Screen TV</strong></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="room">
+                <img src="singleRoom.jpg" alt="Room 2" class="room-img">
+                <h3>Single Room</h3>
+                <div class="room-description">
+                    <p>A spacious room equipped with a double bed or two twin beds, perfect for couples or friends traveling together, offering comfort and convenience.</p>
+                    <ul>
+                        <li><strong>Free Wi-Fi</strong></li>
+                        <li><strong>Air Conditioning</strong></li>
+                        <li><strong>Flat Screen TV</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="room">
+                <img src="suitRoom.jpg" alt="Room 3" class="room-img">
+                <h3>Suit</h3>
+                <div class="room-description">
+                    <p>A spacious room equipped with a double bed or two twin beds, perfect for couples or friends traveling together, offering comfort and convenience.</p>
+                    <ul>
+                        <li><strong>Free Wi-Fi</strong></li>
+                        <li><strong>Air Conditioning</strong></li>
+                        <li><strong>Flat Screen TV</strong></li>
+                    </ul>
+                </div>
+
+
+
+
+                </p>
+                
+            </div>
+            <button class="toggle-btn" id="toggleBtn" aria-label="Toggle Room Panels">▲</button>
+
+
+        </div>
     </div>
+    
 
     <script src="index.js"></script>
 </body>
