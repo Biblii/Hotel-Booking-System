@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #8b6f53;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.dashboard-table thead {
+    background-color: rgb(18, 37, 32);
+    color: white;
+}
+
+.dashboard-table th, .dashboard-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.dashboard-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dashboard-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dashboard-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.actions button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.actions .view {
+    background-color: #c2beb4;
+    color: rgb(53, 52, 52);
+}
+.actions .edit {
+    background-color: #c2beb4;
+    color: rgb(53, 52, 52);
+}
+
+.actions .delete {
+    background-color: #c2beb4;
+    color: rgb(53, 52, 52);
+}
