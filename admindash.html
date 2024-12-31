@@ -3,34 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel</title>
-    <link rel="stylesheet" href="admindash.css">
+    <title>Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admindash1.css">
 </head>
 <body>
+    <a href="index.html" class="back-btn">Back to Home</a>
 
-    <div class="admin-container">
-
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <h2>Admin Panel</h2>
-            <ul>
-                <li><a href="javascript:void(0)" onclick="loadContent('bookHistory.html')">Booking History</a></li>
-                <li><a href="javascript:void(0)" onclick="loadContent('review.html')">Reviews</a></li>
-              
-                <li><a href="javascript:void(0)" onclick="loadContent('room.html')">Room Details</a></li>
-                <li><a href="index.html">Back to Home</a></li>
-            </ul>
+    <div class="dashboard">
+        <div class="container">
+            <img src="bookingHistoryicon.png" alt="Option 1" class="icon">
+            <h3>Bookings</h3>
         </div>
-
-        <!-- Main Content Area -->
-        <div class="main-content">
-            <div id="content-area">
-                <!-- Dynamic content will be loaded here -->
-            </div>
+        <div class="container">
+            <img src="roomIcon.jpg" alt="Option 2" class="icon">
+            <h3>Room Details</h3>
         </div>
-
+        <div class="container">
+            <img src="feedbackicon.png" alt="Option 3" class="icon">
+            <h3>Reviews by guests</h3>
+        </div>
     </div>
-
-    <script src="admindash.js"></script>
 </body>
 </html>

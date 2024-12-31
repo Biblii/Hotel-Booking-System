@@ -1,104 +1,65 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    background-image: url("hotel2.webp");
-    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("hotelView.jpg");
     display: flex;
-    min-height: 100vh;
-}
-
-/* Admin Container */
-.admin-container {
-    display: flex;
-    width: 100%;
-}
-
-/* Sidebar Styles */
-.sidebar {
-    background-color: #0E1C4F;
-    color: white;
-    width: 250px;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
-
-.sidebar h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 15px 0;
-}
-
-.sidebar ul li a {
+.back-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #092746;
     color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 18px;
-    display: block;
-    padding: 10px;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-.sidebar ul li a:hover {
-    background-color: #34495e;
+.back-btn:hover {
+    background-color: #104377;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Main Content Styles */
-.main-content {
-    flex-grow: 1;
-    padding: 20px;
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
 }
 
-/* Content Card Styles */
-.content-card {
-    display: none; /* Hide all content by default */
+.container {
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
     padding: 20px;
-    margin-bottom: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
-.content-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #2c3e50;
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.content-card p {
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+h3 {
     font-size: 18px;
-    color: #7f8c8d;
-}
-
-/* Active content card (visible) */
-.content-card.active {
-    display: block;
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
-    .admin-container {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        height: auto;
-    }
-
-    .main-content {
-        padding: 10px;
-    }
+    font-weight: 600;
+    color: #333;
 }
