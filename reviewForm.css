@@ -6,31 +6,28 @@
 }
 
 body {
-    background-image: url("hotel.jpg");
+    background-image: url("hotelView.jpg");
     background-size: cover;
     display: flex;
-    justify-content: flex-end; 
-    align-items: center;
-    min-height: 100vh; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 110vh; 
     background-position: center;
-    padding-right: 20px; 
 }
 
 .wrapper {
     width: 550px;
-    background-color: #0E1C4F;
+    background-color: #324d3e;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     color: beige;
-    margin-right: -20px;
     padding: 30px 40px;
-    height: 700px;
-    position: relative;
+    height: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-height: 100vh;
+    min-height: 80vh;
 }
 
 .wrapper h1 {
@@ -42,7 +39,7 @@ body {
 
 .input-info {
     position: relative;
-    width: 100%;
+    width: 380px;
     margin-bottom: 20px;
 }
 
@@ -60,6 +57,10 @@ body {
     margin-bottom: 10px;
 }
 
+.input-info input[name="review"] {
+    height:70px;
+    border-radius: 30px;
+}
 .input-info input::placeholder {
     color: rgb(95, 95, 95);
 }
@@ -110,5 +111,5 @@ body {
 }
 
 .go-back-link:hover {
-    background-color: #d3d3d3; 
+    background-color: #d3d3d3;
 }
