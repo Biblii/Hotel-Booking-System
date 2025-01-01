@@ -12,6 +12,7 @@ body {
     align-items: center;
     height: 100vh;
 }
+
 .logout-btn {
     position: absolute;
     top: 20px;
@@ -69,6 +70,7 @@ h3 {
     font-weight: 600;
     color: #333;
 }
+
 .logout-container {
     text-align: right;
     margin: 20px;
