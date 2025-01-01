@@ -10,6 +10,7 @@ function populateBookingTable() {
             }
             bookings.forEach(booking => {
                 const row = document.createElement('tr');
+                
                 const bookingIdCell = document.createElement('td');
                 bookingIdCell.textContent = booking.booking_id;
 
@@ -33,12 +34,7 @@ function populateBookingTable() {
 
                 const paymentStatusCell = document.createElement('td');
                 paymentStatusCell.textContent = booking.payment_status;
-                const actionsCell = document.createElement('td');
-                actionsCell.innerHTML = `
-                    <button onclick="viewBookingDetails(${booking.booking_id})">View</button>
-                    <button onclick="editBooking(${booking.booking_id})">Edit</button>
-                    <button onclick="deleteBooking(${booking.booking_id})">Delete</button>
-                `;
+
                 row.appendChild(bookingIdCell);
                 row.appendChild(guestIdCell);
                 row.appendChild(roomNumberCell);
@@ -47,7 +43,7 @@ function populateBookingTable() {
                 row.appendChild(checkOutCell);
                 row.appendChild(paymentCell);
                 row.appendChild(paymentStatusCell);
-                row.appendChild(actionsCell);
+
                 tableBody.appendChild(row);
             });
         })
@@ -56,15 +52,5 @@ function populateBookingTable() {
             document.getElementById('bookingTableBody').innerHTML = '<tr><td colspan="8">Failed to load data. Please try again later.</td></tr>';
         });
 }
+
 document.addEventListener('DOMContentLoaded', populateBookingTable);
-function viewBookingDetails(bookingId) {
-    alert(`Viewing details for booking ID: ${bookingId}`);
-}
-
-function editBooking(bookingId) {
-    alert(`Editing booking ID: ${bookingId}`);
-}
-
-function deleteBooking(bookingId) {
-    alert(`Deleting booking ID: ${bookingId}`);
-}

@@ -12,29 +12,26 @@ body {
     align-items: center;
     height: 100vh;
 }
-
-.logout-btn {
+.logout-btn{
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #1b3b5d;
+    background-color: #104377;
     color: white;
-    border: none;
     padding: 10px 20px;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+
 }
+
 
 .logout-btn:hover {
-    background-color: #142f4b;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
+    background-color: #17528d;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
 
 .dashboard {
     display: flex;
@@ -48,13 +45,12 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 200px;
     padding: 20px;
-    text-decoration: none; 
     text-align: center;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .container:hover {
-    text-decoration: none; 
     transform: translateY(-10px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -69,9 +65,8 @@ h3 {
     font-size: 18px;
     font-weight: 600;
     color: #333;
+    text-decoration: none;
 }
-
-.logout-container {
-    text-align: right;
-    margin: 20px;
+.container a{
+    text-decoration: none;
 }

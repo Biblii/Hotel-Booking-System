@@ -22,35 +22,18 @@ function populateReviewsTable() {
                 const reviewCell = document.createElement('td');
                 reviewCell.textContent = review.review;
 
-                const actionsCell = document.createElement('td');
-                actionsCell.innerHTML = `
-                    <button onclick="viewReviewDetails('${review.review_id}')">View</button>
-                    <button onclick="deleteReview('${review.review_id}')">Delete</button>
-                `;
-
                 row.appendChild(reviewIDCell);
                 row.appendChild(bookingIDCell);
                 row.appendChild(roomNumberCell);
                 row.appendChild(dateCell);
                 row.appendChild(reviewCell);
-                row.appendChild(actionsCell);
                 tableBody.appendChild(row);
             });
         })
         .catch(error => {
             console.error('Error fetching data:', error);
-            document.getElementById('reviewtable').innerHTML = '<tr><td colspan="6">Failed to load data. Please try again later.</td></tr>';
+            document.getElementById('reviewtable').innerHTML = '<tr><td colspan="5">Failed to load data. Please try again later.</td></tr>';
         });
 }
 
 document.addEventListener('DOMContentLoaded', populateReviewsTable);
-
-function viewReviewDetails(reviewID) {
-    alert(`Viewing details for review ID: ${reviewID}`);
-}
-
-function deleteReview(reviewID) {
-    if (confirm(`Are you sure you want to delete review ID: ${reviewID}?`)) {
-        alert(`Review ID: ${reviewID} deleted successfully.`);
-    }
-}

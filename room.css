@@ -53,3 +53,23 @@ h1 {
     background-color: #f1f1f1;
 }
 
+.go-back-btn {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.back-btn {
+    display: inline-block;
+    background-color: #092746;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+    background-color: #104377;
+    transform: translateY(-2px);
+}
