@@ -3,34 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Busbuddy</title>
+    <title>Leave a Review</title>
     <link rel="stylesheet" href="reviewForm.css">
 </head>
 <body>
     <div class="wrapper">
-        <form id="reg-form">
+        <form action="http://localhost/hotel_transylvania/reviewForm.php" method="POST">
             <h1>Give us a feedback!</h1>
             <div class="input-info">
-                <input type="text" name="user_name" placeholder="Name" required>
+                <input type="text" name="name" placeholder="Name" required>
             </div>
             <div class="input-info">
-                <input type="tel" name="contact_no" placeholder="Contact No." required>
+                <input type="tel" name="contact" placeholder="Contact No." required>
             </div>
             <div class="input-info">
-                <input type="tel" name="room-no" placeholder="Room number" required>
+                <input type="tel" name="room_no" placeholder="Room number" required>
             </div>
             <div class="input-info">
                 <input type="text" name="review" placeholder="Write Your Feedback" required>
             </div>
             <div class="button-container">
                 <button type="submit" class="btn">Submit</button>
-                <a href="index.html" class="go-back-link">Go Back</a>
+                <a href="home.html" class="go-back-link">Go Back</a>
             </div>
         </form>
-
-        
     </div>
-
-    <script src="reviewForm.js"></script>
 </body>
 </html>

@@ -8,31 +8,28 @@
 </head>
 <body>
     <div class="wrapper">
-        <form id="reg-form">
+        <form action="http://localhost/hotel_transylvania/adminreg.php" method="POST">
             <h1>Create your account</h1>
             <div class="input-info">
-                <input type="text" name="user_name" placeholder="Enter Username" required>
+                <input type="text" name="name" placeholder="Enter Username" required>
+            </div>
+            <div class="input-info">
+                <select id="options" name="role" required>
+                    <option value="" disabled selected>Position</option>
+                    <option value="Manager">Manager</option>
+                    <option value="CEO">CEO</option>
+                    <option value="Register">Register</option>
+                </select>
             </div>
             <div class="input-info">
                 <input type="tel" name="contact_no" placeholder="contact no." required>
             </div>
             <div class="input-info">
-                <input type="date" name="dob" placeholder="Date of Birth (child)" required>
-            </div>
-            <div class="input-info">
-                <select id="options" name="role" required>
-                    <option value="" disabled selected>Position</option>
-                    <option value="option1">Manager</option>
-                    <option value="option1">CEO</option>
-                    <option value="option1">Register</option>
-                </select>
-            </div>
-            <div class="input-info">
-                <input type="password" name="password_user" placeholder="set password" required>
+                <input type="password" name="password" placeholder="set password" required>
             </div>
             <div class="button-container">
                 <button type="submit" class="btn">Submit</button>
-                <a href="index.html" class="go-back-link">Go Back</a>
+                <a href="home.html" class="go-back-link">Go Back</a>
             </div>
         </form>
     </div>
